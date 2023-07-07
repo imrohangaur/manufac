@@ -1,46 +1,69 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Manufac Assignment
 
-## Available Scripts
+Gamma Statistics and Flavanoids Table
 
-In the project directory, you can run:
+## Description
 
-### `yarn start`
+This project calculates class-wise statistics for Gamma and Flavanoids based on the provided data.
 
-Runs the app in the development mode.\
+## Installation
+
+Install the project with yarn
+
+1. Clone the repository.
+2. Run the following commands in terminal to install the dependencies.
+```bash
+  yarn install
+  cd manufac
+```
+## Run the project
+
+Install the project with yarn
+
+1. Run the following commands in terminal to run the project.
+```bash
+  yarn start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Usage
 
-### `yarn test`
+### Flavanoids Table
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Import the required data and utility functions from the respective files.
+2. Call the `calculateClassStatistics` function with the data to calculate class-wise statistics for Flavanoids.
+3. Use the calculated statistics to display the Flavanoids table.
 
-### `yarn build`
+```javascript
+import data from '../Wine-Data.json';
+import { calculateMean, calculateMedian, calculateMode } from '../utils/statistics';
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+// Rest of the code
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Gamma Table
 
-### `yarn eject`
+1. Import the required data and utility functions from the respective files.
+2. Call the `calculateClassStatistics` function with the data to calculate class-wise statistics for Gamma.
+3. Use the calculated statistics to display the Gamma table.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```javascript
+import data from '../Wine-Data.json';
+import { calculateMean, calculateMedian, calculateMode } from '../utils/statistics';
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+// Rest of the code
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Utility functions
 
-## Learn More
+You could find the utility functions in `utils/statistics`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+     Utility function to calculate the `mean, median and mode`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Output
+
+![Results](public/results.png)

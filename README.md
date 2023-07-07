@@ -1,7 +1,7 @@
 
 # Manufac Assignment
 
-Gamma Statistics and Flavanoids Table
+Gamma Table and Flavanoids Table
 
 ## Description
 
